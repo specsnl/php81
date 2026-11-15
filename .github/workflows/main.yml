@@ -38,7 +38,7 @@ jobs:
         ${{ matrix.os }}-buildx-${{ matrix.platform }}-${{ matrix.docker.key }}
 
   merge:
-    uses: Ilyes512/github-actions/.github/workflows/merge-php.yml@0.2.2
+    uses: Ilyes512/github-actions/.github/workflows/merge-php.yml@3.0.2
     needs: build
     strategy:
       matrix:
